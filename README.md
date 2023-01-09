@@ -91,7 +91,7 @@ node index.js
 
 Once the application is launched, a series of questions will appear so that the user can enter the necessary information to build the profile. 
 
-If you need more guidance on how to use README Lab, click here for the tutorial!
+If you need more guidance on how to use Team-Up, click here for the tutorial!
 
 ## Questions
 
