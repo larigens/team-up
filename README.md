@@ -32,7 +32,6 @@ Team-Up is a back-end application that generates a profile for each employee on 
   - [Setting Up](#setting-up)
 - [Mock-Up](#mock-up)
 - [Usage](#usage)
-- [Guide](#guide)
 - [Questions](#questions)
 - [Contributions](#contributions)
   - [Contributing Guidelines](#contributing-guidelines)
@@ -69,6 +68,12 @@ npm install --save inquirer@^8.0.0
 ```
 
 **Note: Be sure to download this version, because newer versions no longer use the commonjs syntax require('inquirer').**
+
+You will also need to install [Jest](https://www.npmjs.com/package/jest) to run the unit tests.
+
+```bash
+npm i jest
+```
 
 ## Mock-Up
 
@@ -118,6 +123,8 @@ Our Code of Conduct follows the same principles as the [Contributor Covenant](ht
 - [Inquirer](https://www.npmjs.com/package/inquirer)
   
 - [PaksTech](https://pakstech.com/blog/inquirer-js/)
+  
+- [Jest](https://www.npmjs.com/package/jest)
 
 ### Links
 
