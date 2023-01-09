@@ -113,17 +113,12 @@ Our Code of Conduct follows the same principles as the [Contributor Covenant](ht
 ### Acknowledgements
 
 - [W3 Schools](https://www.w3schools.com)
-
 - [MDN](https://developer.mozilla.org/en-US/)
-
 - [Node.js](https://nodejs.org/en/)
-  
 - [NPM](https://www.npmjs.com/)
-  
 - [Inquirer](https://www.npmjs.com/package/inquirer)
-  
 - [PaksTech](https://pakstech.com/blog/inquirer-js/)
-  
+- [README Lab](https://github.com/larigens/readme-lab)
 - [Jest](https://www.npmjs.com/package/jest)
 
 ### Links
