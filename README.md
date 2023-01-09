@@ -3,18 +3,18 @@
 <p align="center">
     <img src="./assets/favicon/apple-touch-icon.png" alt="logo" width="120px" height="120px" />
   <br>
-  <i>Employees' profile generator
+  <i>Team Profile Generator
     <br> built using Node.js.</i>
   <br>
 </p>
 <br>
 
-![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.1-success.svg)
-![Contributors](https://img.shields.io/github/contributors/larigens/team-up?style=plastic&color=success)
-![Forks](https://img.shields.io/github/forks/larigens/team-up?style=plastic&color=success)
-![Stars](https://img.shields.io/github/stars/larigens/team-up?style=plastic&color=success)
-![Licence](https://img.shields.io/static/v1?label=License&message=Apache-2.0&color=success)
-![Issues](https://img.shields.io/github/issues/larigens/team-up?style=plastic&color=success)
+![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.1-lightgrey.svg)
+![Contributors](https://img.shields.io/github/contributors/larigens/team-up?style=plastic&color=lightgrey)
+![Forks](https://img.shields.io/github/forks/larigens/team-up?style=plastic&color=lightgrey)
+![Stars](https://img.shields.io/github/stars/larigens/team-up?style=plastic&color=lightgrey)
+![Licence](https://img.shields.io/static/v1?label=License&message=Apache-2.0&color=lightgrey)
+![Issues](https://img.shields.io/github/issues/larigens/team-up?style=plastic&color=lightgrey)
 
 ---
 ## Description
