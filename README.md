@@ -1,7 +1,7 @@
 <h1 align="center"> Team Up </h1>
 
 <p align="center">
-    <img src="./assets/images/logo.png" alt="logo" width="150px" height="150px" />
+    <img src="./assets/favicon/apple-touch-icon.png" alt="logo" width="120px" height="120px" />
   <br>
   <i>Employees' profile generator
     <br> built using Node.js.</i>
