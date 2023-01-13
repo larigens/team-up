@@ -1,4 +1,4 @@
-// Packages needed
+// Packages needed.
 const inquirer = require('inquirer');
 // const fs = require("fs");
 const Engineer = require("./lib/engineer");
@@ -6,9 +6,10 @@ const Intern = require("./lib/intern");
 const Manager = require("./lib/manager");
 // const generateHTML = require("./generateHTML");
 
+// Will be an array of objects with all employee information separated by role.
 var team = []
 
-// Array of questions for user input
+// Array of prompts to enter the team manager’s informations.
 const managerPrompt = [
     {
         type: "input",
@@ -70,16 +71,19 @@ const managerPrompt = [
     }
 ]
 
-// Initialize app
+// Function call to initialize app.
 const init = () => {
     inquirer
         .prompt(managerPrompt)
         .then((answers) => {
+            // Sets up the manager profile card.
             const manager = new Manager(answers.name, answers.id, answers.email, answers.officeNumber)
             team.push(manager);
+            // Conditional statement to start another series of questions to collect information necessary for the addition of another employee's card.
             if (answers.employee === true) {
                 initEmployee()
             }
+            // Finalize prompts and start building team profile cards.
             else {
                 writeToFile(team);
             }
@@ -89,6 +93,7 @@ const init = () => {
         })
 }
 
+// Array of questions prompted to enter the employee’s informations.
 const employeePrompt = [
     {
         type: "list",
@@ -100,6 +105,7 @@ const employeePrompt = [
         type: "input",
         message: "Please enter the employee's name: ",
         name: "employeeName",
+        // This prompt will only be displayed if the user decides not to finish building his team profile.
         when(answers) {
             return answers.role !== "Finish building my team";
         },
@@ -147,25 +153,28 @@ const employeePrompt = [
     }
 ]
 
-// // Initialize questions to add another employee
+// Initializes prompts to add another employee.
 const initEmployee = () => {
     inquirer
         .prompt(employeePrompt)
         .then((answers) => {
-            // Need to declare these here or it will not print it!
+            // Need to declare these variables here or it won't print it in the constants below.
             let employeeName = answers.employeeName;
             let employeeId = answers.employeeId;
             let employeeEmail = answers.employeeEmail;
-
+            // Conditional statement to only collect the information below if the employee is an engineer.
             if (answers.role === "Engineer") {
                 inquirer
                     .prompt(engineerPrompt)
                     .then((answers) => {
+                        // Sets up the engineer profile card.
                         const engineer = new Engineer(employeeName, employeeId, employeeEmail, answers.employeeGithub)
                         team.push(engineer);
+                        // If the user wants to add another employee, this function is invoked again.
                         if (answers.employee === true) {
                             initEmployee()
                         }
+                        // Finalize prompts and start building team profile cards.
                         else {
                             writeToFile(team);
                         }
@@ -174,10 +183,12 @@ const initEmployee = () => {
                         console.log(err);
                     })
             }
+            // Conditional statement to only collect the information below if the employee is an intern.
             else if (answers.role === "Intern") {
                 inquirer
                     .prompt(internPrompt)
                     .then((answers) => {
+                        // Sets up the intern profile card.
                         const intern = new Intern(employeeName, employeeId, employeeEmail, answers.employeeSchool)
                         team.push(intern);
                         if (answers.employee === true) {
@@ -191,6 +202,7 @@ const initEmployee = () => {
                         console.log(err);
                     })
             }
+            // Finalize prompts and start building team profile cards if the user selects the "Finish building my team" option.
             else {
                 writeToFile(team);
             }
@@ -200,6 +212,7 @@ const initEmployee = () => {
         })
 }
 
+// Specific question for engineers.
 const engineerPrompt = [
     {
         type: "input",
@@ -221,6 +234,7 @@ const engineerPrompt = [
     }
 ]
 
+// Specific question for interns.
 const internPrompt = [
     {
         type: "input",
@@ -242,6 +256,7 @@ const internPrompt = [
     }
 ]
 
+// Initialize app.
 init()
 
 // // Function to write HTML file
