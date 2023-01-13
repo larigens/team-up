@@ -64,7 +64,7 @@ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh | bash
 Open the project in VS Code and make sure you are in the directory of this application before installing `Inquirer`. To install it, type the command below on your terminal:
 
 ```bash
-npm install --save inquirer@^8.0.0
+npm install --save inquirer@^8.2.5
 ```
 
 **Note: Be sure to download this version, because newer versions no longer use the commonjs syntax require('inquirer').**
@@ -89,7 +89,12 @@ Launch the application by entering the command below on your terminal:
 node index.js
 ```
 
-Once the application is launched, a series of questions will appear so that the user can enter the necessary information to build the profile. 
+Once the application is launched, a series of questions will appear so that the user can enter the necessary information to build the profiles.
+
+The user will be prompted to enter the team manager’s name, employee ID, email address, and office number, and then, a menu with the option to add an engineer or an intern or to finish building the team.
+
+When the engineer option is selected, the user will be prompted to enter the engineer’s name, ID, email, and GitHub username, and then taken back to the menu. 
+When the intern option is selected, the user will be prompted to enter the intern’s name, ID, email, and school, and then taken back to the menu. 
 
 If you need more guidance on how to use Team-Up, click here for the tutorial!
 
@@ -98,6 +103,7 @@ If you need more guidance on how to use Team-Up, click here for the tutorial!
 For questions and support feel free to contact me via:
 
 <a href="mailto:larigens@gmail.com">📧 Email </a> 
+
 <a href="https://github.com/larigens">🐈‍⬛ GitHub </a>
 
 ## Contributions
