@@ -66,7 +66,7 @@ function generateHTML(team) {
             <div class="card-body">
                 <p class="card-text m-1 pt-1 pb-3">ID: <span>${engineers.id}</span></p>
                 <p class="card-text m-1 pt-1 pb-3">Email: <a href="mailto:${engineers.email}">${engineers.email}</a></p>
-                <p class="card-text m-1 pt-1 pb-3">GitHub: <a href="https://github.com/${engineers.github}"> @${engineers.github}</a></p>
+                <p class="card-text m-1 pt-1 pb-3">GitHub: <a href="https://github.com/${engineers.github} target="_blank"> @${engineers.github}</a></p>
             </div>
         </div>\n`
         })
