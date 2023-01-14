@@ -259,40 +259,11 @@ const internPrompt = [
 // Initialize app.
 init()
 
-// // Function to write HTML file
+// Function to write HTML file
 const writeToFile = () => {
     const fileName = './dist/index.html';
-    console.log("Generating your team's profile...");
+    // The content of the HTML file will be the result of the generateHTML function.
     fs.writeFile(fileName, generateHTML(team), (err) =>
         err ? console.log(err) : console.log("Your team's profile has been successfully generated!")
     );
 }
-
-
-// // writeToFile.prototype.read = function (file) {
-// //     return fs.readFileSync(file, "utf8");
-// // };
-
-// // writeToFile.prototype.write = function (path, data) {
-// //     return fs.writeFileSync(path, data);
-// // };
-
-// // writeToFile.prototype.append = function (file, data) {
-// //     return fs.appendFileSync(file, data);
-// // };
-
-
-
-// // const generateHTML = new generateHTML();
-
-// // generateHTML.write("index.html", "Hello World!");
-
-// // const message1 = generateHTML.read("message.txt");
-
-// // console.log(message1);
-
-// // generateHTML.append("message.txt", "\nGoodbye World!");
-
-// // const message2 = generateHTML.read("message.txt");
-
-// // console.log(message2);

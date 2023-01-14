@@ -14,61 +14,91 @@
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap"
-        rel="stylesheet"> <!-- My CSS file -->
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,300;0,400;0,600;0,700;1,500&display=swap" rel="stylesheet">
+    <!-- My CSS file -->
     <link rel="stylesheet" href="./style.css" />
     <!-- Favicon -->
-    <link rel="apple-touch-icon" sizes="180x180" href="../assets/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="../assets/favicon/favicon-16x16.png">
-    <link rel="manifest" href="../assets/favicon/site.webmanifest">
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="./assets/favicon/site.webmanifest">
 </head>
     
 <body>
-    <header class="navbar p-4 shadow mb-4 flex-md-nowrap">
-        <img src="../assets/favicon/apple-touch-icon.png" alt="logo" class="ms-2" width="150px" height="150px">
+    <header class="navbar p-4 shadow flex-md-nowrap">
+        <img src="./assets/favicon/apple-touch-icon.png" alt="logo" class="ms-2" width="150px" height="150px">
         <h1 class="title ms-1">Team Up!</h1>
     </header>
         
-    <div id="dashboard" class="d-flex flex-wrap justify-content-evenly">
+    <div id="dashboard" class="d-flex pt-3 pb-3 flex-wrap justify-content-evenly">
 
-        <div class="card ms-4 mt-4" style="width: 18rem">
-            <h5 class="card-header ps-3 pb-2">Albus Dumbledore</h5>
-            <h5 class="card-title ms-3 mt-3"><span class="fa fa-users"></span> Manager</h5>
+        <div class="card m-3" style="width: 22rem; height: 20rem;">
+            <h5 class="card-header p-3 text-center">Albus Dumbledore</h5>
+            <h5 class="card-title mt-2 me-1 ms-4 pt-3"><span id="icon" class="fa fa-users"></span> Manager</h5>
             <div class="card-body">
-                <p class="card-text">ID: <span>1881</span></p>
-                <p class="card-text">Email: <a href="mailto:adumbledore@hogwarts.com">adumbledore@hogwarts.com</a></p>
-                <p class="card-text">GitHub: <span>123-456-7890</span></p>
+                <p class="card-text m-1 pt-1 pb-3">ID: <span>1881</span></p>
+                <p class="card-text m-1 pt-1 pb-3">Email: <a href="mailto:adumbledore@hogwarts.edu">adumbledore@hogwarts.edu</a></p>
+                <p class="card-text m-1 pt-1 pb-3">Office Number: <span>123-456-7890</span></p>
             </div>
         </div>
 
-        <div class="card ms-4 mt-4" style="width: 18rem">
-            <h5 class="card-header ps-3 pb-2">Hermione Jean Granger</h5>
-            <h5 class="card-title ms-3 mt-3"><span class="fa fa-laptop"></span> Engineer</h5>
+        <div class="card m-3" style="width: 22rem; height: 20rem;">
+            <h5 class="card-header p-3 text-center">Hermione Jean Granger</h5>
+            <h5 class="card-title mt-2 me-1 ms-4 pt-3"><span id="icon" class="fa fa-laptop"></span> Engineer</h5>
             <div class="card-body">
-                <p class="card-text">ID: <span>1979</span></p>
-                <p class="card-text">Email: <ahref="mailto:hgranger@hogwarts.com">hgranger@hogwarts.com</a></p>
-                <p class="card-text">GitHub: <span>hgranger</span></p>
+                <p class="card-text m-1 pt-1 pb-3">ID: <span>09191979</span></p>
+                <p class="card-text m-1 pt-1 pb-3">Email: <a href="mailto:hgranger@hogwarts.edu">hgranger@hogwarts.edu</a></p>
+                <p class="card-text m-1 pt-1 pb-3">GitHub: <a href="https://github.com/hgranger">@hgranger</a></p>
             </div>
         </div>
 
-        <div class="card ms-4 mt-4" style="width: 18rem">
-            <h5 class="card-header ps-3 pb-2">Harry James Potter</h5>
-            <h5 class="card-title ms-3 mt-3"><span class="fa fa-laptop"></span> Engineer</h5>
+        <div class="card m-3" style="width: 22rem; height: 20rem;">
+            <h5 class="card-header p-3 text-center">Harry James Potter</h5>
+            <h5 class="card-title mt-2 me-1 ms-4 pt-3"><span id="icon" class="fa fa-laptop"></span> Engineer</h5>
             <div class="card-body">
-                <p class="card-text">ID: <span>1980</span></p>
-                <p class="card-text">Email: <ahref="mailto:hpotter@hogwats.com">hpotter@hogwats.com</a></p>
-                <p class="card-text">GitHub: <span>hpotter</span></p>
+                <p class="card-text m-1 pt-1 pb-3">ID: <span>07311980</span></p>
+                <p class="card-text m-1 pt-1 pb-3">Email: <a href="mailto:hpotter@hogwarts.edu">hpotter@hogwarts.edu</a></p>
+                <p class="card-text m-1 pt-1 pb-3">GitHub: <a href="https://github.com/hpotter">@hpotter</a></p>
             </div>
         </div>
 
-        <div class="card ms-4 mt-4" style="width: 18rem">
-            <h5 class="card-header ps-3 pb-2">Ronald Bilius Weasley</h5>
-            <h5 class="card-title ms-3 mt-3"><span class="fa-graduation-cap"></span> Intern</h5>
+        <div class="card m-3" style="width: 22rem; height: 20rem;">
+            <h5 class="card-header p-3 text-center">Sirius Black III</h5>
+            <h5 class="card-title mt-2 me-1 ms-4 pt-3"><span id="icon" class="fa fa-laptop"></span> Engineer</h5>
             <div class="card-body">
-                <p class="card-text">ID: <span>1980-2</span></p>
-                <p class="card-text">Email: <ahref="mailto:rweasley@hogwarts.com"></a></p>
-                <p class="card-text">GitHub: <span>Hogwarts School of Witchcraft and Wizardry</span></p>
+                <p class="card-text m-1 pt-1 pb-3">ID: <span>11031959</span></p>
+                <p class="card-text m-1 pt-1 pb-3">Email: <a href="mailto:sblack@hogwarts.edu">sblack@hogwarts.edu</a></p>
+                <p class="card-text m-1 pt-1 pb-3">GitHub: <a href="https://github.com/sblack">@sblack</a></p>
+            </div>
+        </div>
+
+        <div class="card m-3" style="width: 22rem; height: 20rem;">
+            <h5 class="card-header p-3 text-center">Ronald Bilius Weasley</h5>
+            <h5 class="card-title mt-2 me-1 ms-4 pt-3"><span id="icon" class="fa fa-graduation-cap"></span> Intern</h5>
+            <div class="card-body">
+                <p class="card-text m-1 pt-1 pb-3">ID: <span>03011980</span></p>
+                <p class="card-text m-1 pt-1 pb-3">Email: <a href="mailto:rweasley@hogwarts.edu">rweasley@hogwarts.edu</a></p>
+                <p class="card-text m-1 pt-1 pb-3">School: <span>Hogwarts School of Witchcraft and Wizardry</span></p>
+            </div>
+        </div>
+
+        <div class="card m-3" style="width: 22rem; height: 20rem;">
+            <h5 class="card-header p-3 text-center">Draco Lucius Malfoy</h5>
+            <h5 class="card-title mt-2 me-1 ms-4 pt-3"><span id="icon" class="fa fa-graduation-cap"></span> Intern</h5>
+            <div class="card-body">
+                <p class="card-text m-1 pt-1 pb-3">ID: <span>06051980</span></p>
+                <p class="card-text m-1 pt-1 pb-3">Email: <a href="mailto:dmalfoy@hogwarts.edu">dmalfoy@hogwarts.edu</a></p>
+                <p class="card-text m-1 pt-1 pb-3">School: <span>Hogwarts School of Witchcraft and Wizardry</span></p>
+            </div>
+        </div>
+
+        <div class="card m-3" style="width: 22rem; height: 20rem;">
+            <h5 class="card-header p-3 text-center">Luna Lovegood</h5>
+            <h5 class="card-title mt-2 me-1 ms-4 pt-3"><span id="icon" class="fa fa-graduation-cap"></span> Intern</h5>
+            <div class="card-body">
+                <p class="card-text m-1 pt-1 pb-3">ID: <span>02131981</span></p>
+                <p class="card-text m-1 pt-1 pb-3">Email: <a href="mailto:llovegood@hogwarts.edu">llovegood@hogwarts.edu</a></p>
+                <p class="card-text m-1 pt-1 pb-3">School: <span>Hogwarts School of Witchcraft and Wizardry</span></p>
             </div>
         </div>
 

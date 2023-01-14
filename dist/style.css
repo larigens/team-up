@@ -1,3 +1,19 @@
+/* Pseudo-class that matches the root element of the document. */
+:root {
+    --dark-shades: #253237;
+    --dark-accent: #5C6B73;
+    --main-brand: #9DB4C0;
+    --light-accent: #C2DFE3;
+    --light-shades: #E0FBFC;
+    --gradient-top: linear-gradient(to top, var(--main-brand), var(--light-accent));
+    --font: 'IBM Plex Mono', monospace;
+}
+
+* {
+    font-family: var(--font);
+    color: var(--dark-shades);
+}
+
 .title {
     margin-top: 10px;
     margin-right: 9em;
@@ -5,7 +21,39 @@
     letter-spacing: 0.5rem;
 }
 
-.dashboard {
-    background-image: url(../assets/images/background.png);
-    background-size: cover;
+#dashboard {
+    background-image: url(./assets/images/background.png);
+    /* Ensures that the image does not repeat to fill in the empty spaces */
+    background-repeat: no-repeat;
+    /* It will make sure the whole image is shown in the background without cropping out any of it. */
+    background-size: contain;
+    /* Sizes the image 100% across and 100% down the page. */
+    background-size: 100% 100%;
+}
+
+.card {
+    box-shadow: 0 2px 4px var(--dark-accent);
+}
+
+.card-header {
+    background: var(--gradient-top);
+    font-size: 21px;
+    text-align: center;
+    text-shadow: 2px 0.7px var(--light-accent);
+    color: var(--light-shades);
+}
+
+#icon {
+    font-weight: 600;
+    color: var(--light-accent);
+}
+
+.card-text span,
+.card-text a {
+    font-weight: 600;
+    color: var(--main-brand);
+}
+
+.card-text a {
+    text-decoration: none;
 }
