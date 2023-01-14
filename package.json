@@ -26,7 +26,9 @@
   },
   "homepage": "https://github.com/larigens/team-up#readme",
   "dependencies": {
-    "inquirer": "^8.2.5",
+    "inquirer": "^8.2.5"
+  },
+  "devDependencies": {
     "jest": "^29.3.1"
   }
 }

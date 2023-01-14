@@ -1,7 +1,7 @@
 <h1 align="center"> Team Up </h1>
 
 <p align="center">
-    <img src="./dist./../dist/assets/favicon/apple-touch-icon.png" alt="logo" width="120px" height="120px" />
+    <img src="./dist/assets/favicon/apple-touch-icon.png" alt="logo" width="120px" height="120px" />
   <br>
   <i>Team Profile Generator
     <br> built using Node.js.</i>
@@ -32,6 +32,7 @@ Team-Up is a back-end application that generates a profile for each employee on 
   - [Setting Up](#setting-up)
 - [Mock-Up](#mock-up)
 - [Usage](#usage)
+- [Tests](#tests)
 - [Questions](#questions)
 - [Contributions](#contributions)
   - [Contributing Guidelines](#contributing-guidelines)
@@ -97,6 +98,10 @@ When the engineer option is selected, the user will be prompted to enter the eng
 When the intern option is selected, the user will be prompted to enter the intern’s name, ID, email, and school, and then taken back to the menu. 
 
 If you need more guidance on how to use Team-Up, click here for the tutorial!
+
+## Tests
+
+run `npx jest` in your terminal
 
 ## Questions
 
