@@ -63,11 +63,6 @@ const managerPrompt = [
                 return true;
             }
         }
-    },
-    {
-        type: "confirm",
-        message: "Would you like to add another employee?",
-        name: "employee"
     }
 ]
 
@@ -79,14 +74,8 @@ const init = () => {
             // Sets up the manager profile card.
             const manager = new Manager(answers.name, answers.id, answers.email, answers.officeNumber)
             team.push(manager);
-            // Conditional statement to start another series of questions to collect information necessary for the addition of another employee's card.
-            if (answers.employee === true) {
-                initEmployee()
-            }
-            // Finalize prompts and start building team profile cards.
-            else {
-                writeToFile(team);
-            }
+            // Function call to initialize series of questions to collect information necessary for the addition of another employee's card.
+            initEmployee()
         })
         .catch(err => {
             console.log(err);
