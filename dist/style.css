@@ -4,3 +4,8 @@
     font-size: 70px;
     letter-spacing: 0.5rem;
 }
+
+.dashboard {
+    background-image: url(../assets/images/background.png);
+    background-size: cover;
+}

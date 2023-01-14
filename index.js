@@ -1,10 +1,10 @@
 // Packages needed.
 const inquirer = require('inquirer');
-// const fs = require("fs");
+const fs = require("fs");
 const Engineer = require("./lib/engineer");
 const Intern = require("./lib/intern");
 const Manager = require("./lib/manager");
-// const generateHTML = require("./generateHTML");
+const generateHTML = require("./src/generateHTML");
 
 // Will be an array of objects with all employee information separated by role.
 var team = []
@@ -261,12 +261,11 @@ init()
 
 // // Function to write HTML file
 const writeToFile = () => {
-    // const fileName = './dist/index.html';
+    const fileName = './dist/index.html';
     console.log("Generating your team's profile...");
-    console.log(team)
-    // fs.writeFile(fileName, generateHTML(answers), (err) =>
-    //     err ? console.log(err) : console.log("Your team's profile has been successfully generated!")
-    // );
+    fs.writeFile(fileName, generateHTML(team), (err) =>
+        err ? console.log(err) : console.log("Your team's profile has been successfully generated!")
+    );
 }
 
 
