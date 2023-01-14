@@ -159,14 +159,7 @@ const initEmployee = () => {
                         // Sets up the engineer profile card.
                         const engineer = new Engineer(employeeName, employeeId, employeeEmail, answers.employeeGithub)
                         team.push(engineer);
-                        // If the user wants to add another employee, this function is invoked again.
-                        if (answers.employee === true) {
-                            initEmployee()
-                        }
-                        // Finalize prompts and start building team profile cards.
-                        else {
-                            writeToFile(team);
-                        }
+                        initEmployee();
                     })
                     .catch(err => {
                         console.log(err);
@@ -180,12 +173,7 @@ const initEmployee = () => {
                         // Sets up the intern profile card.
                         const intern = new Intern(employeeName, employeeId, employeeEmail, answers.employeeSchool)
                         team.push(intern);
-                        if (answers.employee === true) {
-                            initEmployee()
-                        }
-                        else {
-                            writeToFile(team);
-                        }
+                        initEmployee();
                     })
                     .catch(err => {
                         console.log(err);
@@ -215,11 +203,6 @@ const engineerPrompt = [
                 return true;
             }
         }
-    },
-    {
-        type: "confirm",
-        message: "Would you like to add another employee?",
-        name: "employee"
     }
 ]
 
@@ -237,11 +220,6 @@ const internPrompt = [
                 return true;
             }
         }
-    },
-    {
-        type: "confirm",
-        message: "Would you like to add another employee?",
-        name: "employee"
     }
 ]
 
