@@ -1,12 +1,12 @@
 // Packages needed.
 const inquirer = require('inquirer');
 const fs = require("fs");
-const Employee = require("./lib/employee");
+
+// Library needed.
 const Engineer = require("./lib/engineer");
 const Intern = require("./lib/intern");
 const Manager = require("./lib/manager");
 const generateHTML = require("./src/generateHTML");
-const Employee = require('./lib/employee');
 
 // Will be an array of objects with all employee information separated by role.
 var team = []
@@ -73,7 +73,6 @@ const init = () => {
     inquirer
         .prompt(managerPrompt)
         .then((answers) => {
-            const employee = new Employee(answers.name, answers.id, answers.email)
             // Sets up the manager profile card.
             const manager = new Manager(answers.name, answers.id, answers.email, answers.officeNumber)
             team.push(manager);
@@ -159,7 +158,6 @@ const initEmployee = () => {
                 inquirer
                     .prompt(engineerPrompt)
                     .then((answers) => {
-                        const employee = new Employee(employeeName, employeeId, employeeEmail, "Engineer")
                         // Sets up the engineer profile card.
                         const engineer = new Engineer(employeeName, employeeId, employeeEmail, answers.employeeGithub)
                         team.push(engineer);
@@ -174,7 +172,6 @@ const initEmployee = () => {
                 inquirer
                     .prompt(internPrompt)
                     .then((answers) => {
-                        const employee = new Employee(employeeName, employeeId, employeeEmail, "Intern")
                         // Sets up the intern profile card.
                         const intern = new Intern(employeeName, employeeId, employeeEmail, answers.employeeSchool)
                         team.push(intern);

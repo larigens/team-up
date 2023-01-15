@@ -19,9 +19,9 @@
 ---
 ## Description
 
-A command-line application that takes in information about employees on a software engineering team and generates an HTML webpage that displays summaries for each person.
+Team Up is a back-end application that generates an HTML webpage that displays summaries for each employee on a software engineering team. 
 
-Team-Up is a back-end application that generates a profile for each employee on a software engineering team.  
+All you need to do is enter a few simple pieces of information, and this tool will generate a document that provides managers an easy way to navigate through his/her team's important information. 
 
 ## Table of Contents
 - [Description](#description)
@@ -33,8 +33,10 @@ Team-Up is a back-end application that generates a profile for each employee on 
 - [Mock-Up](#mock-up)
 - [Usage](#usage)
 - [Tests](#tests)
+  - [Prerequisites](#prerequisites-1)
+  - [Running Tests](#running-tests)
 - [Questions](#questions)
-- [Contributions](#contributions)
+- [Contributing](#contributing)
   - [Contributing Guidelines](#contributing-guidelines)
   - [Code of Conduct](#code-of-conduct)
 - [Credits](#credits)
@@ -53,6 +55,7 @@ git clone [paste ssh key]
 ```
 
 I would recommend downloading [Visual Studio Code](https://code.visualstudio.com/download) to edit the code locally. If you need more information on how to clone a repository, [click here](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository)!
+
 ### Prerequisites
 
 This package requires you to have [Node.js](https://nodejs.org/en/download/), npm and Inquirer installed on your machine. You can install `npm` by running the code below on your terminal:
@@ -70,17 +73,11 @@ npm install --save inquirer@^8.2.5
 
 **Note: Be sure to download this version, because newer versions no longer use the commonjs syntax require('inquirer').**
 
-You will also need to install [Jest](https://www.npmjs.com/package/jest) to run the unit tests.
-
-```bash
-npm i jest
-```
-
 ## Mock-Up
 
-The following gif shows the web application's appearance and functionality:
+The following image shows the web application's appearance:
 
-![App Screenshot](./assets/images/demo.gif)
+<img src="./dist/assets/images/demo.png" alt="App Screenshot" width="490px" height="260px" />
 
 ## Usage
 
@@ -90,18 +87,43 @@ Launch the application by entering the command below on your terminal:
 node index.js
 ```
 
-Once the application is launched, a series of questions will appear so that the user can enter the necessary information to build the profiles.
+After launching the application, the user must answer a series of questions about each profile being built.
 
-The user will be prompted to enter the team manager’s name, employee ID, email address, and office number, and then, a menu with the option to add an engineer or an intern or to finish building the team.
+The user will be prompted to enter the **team manager's name**, **employee ID**, **email address** and **office number**. Then a menu with three options appears: Add engineer, an intern or finish building the team.
 
-When the engineer option is selected, the user will be prompted to enter the engineer’s name, ID, email, and GitHub username, and then taken back to the menu. 
-When the intern option is selected, the user will be prompted to enter the intern’s name, ID, email, and school, and then taken back to the menu. 
+If another employee is being added, the user must enter the employee's **name**, **ID** and **email address**. If the engineer option is selected, the user will also be prompted to enter engineer's **GitHub username**. If the intern option is selected, the user will also be prompted to enter the intern's **school**. Then the user is taken back to the menu where he can add another employee (engineer or intern) or finish building the team.
 
-If you need more guidance on how to use Team-Up, click here for the tutorial!
+If you need more guidance on how to use Team-Up, click [here](https://drive.google.com/file/d/1xYZM4rEK1H8AqJkz9RiywviF-rAxVCFF/view) for the tutorial!
 
 ## Tests
 
-run `npx jest` in your terminal
+### Prerequisites
+
+To test this application, you will need to install [Jest](https://www.npmjs.com/package/jest).
+
+```bash
+npm i jest
+```
+
+Then, add Jest as a dev dependency to the project by running:
+
+```bash
+npm install --save-dev jest
+```
+
+### Running Tests
+
+Open your terminal, make sure you are in the directory of this application and type the command below:
+
+```bash
+npx jest
+```
+
+You should see a result like the following:
+
+<img src="./dist/assets/images/test-demo.png" alt="test-demo" width="350px" height="220px" />
+
+All tests passed, and all four Test Suites ran without errors.
 
 ## Questions
 
@@ -111,7 +133,7 @@ For questions and support feel free to contact me via:
 
 <a href="https://github.com/larigens">🐈‍⬛ GitHub </a>
 
-## Contributions
+## Contributing
 ### Contributing Guidelines
 
 Want to report a bug, contribute some code, request a new feature, or improve the documentation? You can submit an issue and I will gladly welcome you as a contributor, but before submitting an issue, please search the issue tracker, as it may already exist!
