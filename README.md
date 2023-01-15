@@ -76,7 +76,7 @@ npm install --save inquirer@^8.2.5
 
 The following image shows the web application's appearance:
 
-<img src="./dist/assets/images/demo.png" alt="App Screenshot" width="700px" height="320px" />
+<img src="./dist/assets/images/demo.png" alt="App Screenshot" width="700px" height="340px" />
 
 ## Usage
 
