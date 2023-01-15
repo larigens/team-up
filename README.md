@@ -77,7 +77,7 @@ npm install --save inquirer@^8.2.5
 
 The following image shows the web application's appearance:
 
-<img src="./dist/assets/images/demo.png" alt="App Screenshot" width="700px" height="340px" />
+<img src="./dist/assets/images/demo.png" alt="App Screenshot" width="700px" height="342px" />
 
 ## Usage
 
@@ -121,7 +121,7 @@ npx jest
 
 You should see a result like the following:
 
-<img src="./dist/assets/images/demo.png" alt="App Screenshot" width="730px" height="350px" />
+<img src="./dist/assets/images/test-demo.png" alt="Test Screenshot" width="250px" height="160px" />
 
 All tests passed, and all four Test Suites ran without errors.
 
