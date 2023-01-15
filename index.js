@@ -3,9 +3,9 @@ const inquirer = require('inquirer');
 const fs = require("fs");
 
 // Library needed.
-const Engineer = require("./lib/engineer");
-const Intern = require("./lib/intern");
-const Manager = require("./lib/manager");
+const Engineer = require("./lib/Engineer");
+const Intern = require("./lib/Intern");
+const Manager = require("./lib/Manager");
 const generateHTML = require("./src/generateHTML");
 
 // Will be an array of objects with all employee information separated by role.
