@@ -92,7 +92,7 @@ The user will be prompted to enter the **team manager's name**, **employee ID**,
 
 If another employee is being added, the user must enter the employee's **name**, **ID** and **email address**. If the engineer option is selected, the user will also be prompted to enter engineer's **GitHub username**. If the intern option is selected, the user will also be prompted to enter the intern's **school**. Then the user is taken back to the menu where he can add another employee (engineer or intern) or finish building the team.
 
-If you need more guidance on how to use Team-Up, click [here](https://drive.google.com/file/d/1xYZM4rEK1H8AqJkz9RiywviF-rAxVCFF/view) for the tutorial!
+If you need more guidance on how to use Team-Up, click [here](https://drive.google.com/file/d/1z-W2L81c-xrab-iyXw2WiaD0pFpZ80y2/view) for the tutorial!
 
 ## Tests
 
