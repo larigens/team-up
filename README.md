@@ -121,7 +121,7 @@ npx jest
 
 You should see a result like the following:
 
-<img src="./dist/assets/images/test-demo.png" alt="test-demo" width="350px" height="220px" />
+<img src="./dist/assets/images/demo.png" alt="App Screenshot" width="700px" height="340px" />
 
 All tests passed, and all four Test Suites ran without errors.
 
