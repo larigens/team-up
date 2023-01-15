@@ -25,7 +25,6 @@ All you need to do is enter a few simple pieces of information, and this tool wi
 
 ## Table of Contents
 - [Description](#description)
-- [Table of Contents](#table-of-contents)
 - [Installation](#installation)
   - [Cloning the Repository](#cloning-the-repository)
   - [Prerequisites](#prerequisites)
