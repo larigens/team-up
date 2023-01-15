@@ -25,6 +25,7 @@ All you need to do is enter a few simple pieces of information, and this tool wi
 
 ## Table of Contents
 - [Description](#description)
+- [Table of Contents](#table-of-contents)
 - [Installation](#installation)
   - [Cloning the Repository](#cloning-the-repository)
   - [Prerequisites](#prerequisites)
@@ -76,7 +77,7 @@ npm install --save inquirer@^8.2.5
 
 The following image shows the web application's appearance:
 
-<img src="./dist/assets/images/demo.png" alt="App Screenshot" width="490px" height="260px" />
+<img src="./dist/assets/images/demo.png" alt="App Screenshot" width="700px" height="340px" />
 
 ## Usage
 
@@ -92,7 +93,7 @@ The user will be prompted to enter the **team manager's name**, **employee ID**,
 
 If another employee is being added, the user must enter the employee's **name**, **ID** and **email address**. If the engineer option is selected, the user will also be prompted to enter engineer's **GitHub username**. If the intern option is selected, the user will also be prompted to enter the intern's **school**. Then the user is taken back to the menu where he can add another employee (engineer or intern) or finish building the team.
 
-If you need more guidance on how to use Team-Up, click [here](https://drive.google.com/file/d/1xYZM4rEK1H8AqJkz9RiywviF-rAxVCFF/view) for the tutorial!
+If you need more guidance on how to use Team-Up, click [here](https://drive.google.com/file/d/1z-W2L81c-xrab-iyXw2WiaD0pFpZ80y2/view) for the tutorial!
 
 ## Tests
 
